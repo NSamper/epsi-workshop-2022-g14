@@ -14,5 +14,5 @@ jobs:
           username: NSamper
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: nsamper/django-base/django-server
+          repository: nsamper/epsi-workshop-2022-g14/django-webapp
           tag_with_sha: true
