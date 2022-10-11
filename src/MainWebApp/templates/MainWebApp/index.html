@@ -1,0 +1,11 @@
+{% extends "MainWebApp/base.html" %}
+
+{% block content %}
+    <main class="container align-content-center">
+    {% if feedback %}
+        message : {{ feedback.message }}
+    {% else %}
+        No recommandations found
+    {% endif %}
+    </main>
+{% endblock %}
