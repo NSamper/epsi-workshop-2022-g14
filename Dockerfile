@@ -13,7 +13,7 @@ RUN mkdir -p /opt/app \
     && mkdir -p /opt/app/DjangoProject
 
 COPY dependancies.txt start-server.sh /opt/app/
-RUN chmod a+x /opt/app/start-server.sh
+RUN chmod a+rwx /opt/app/
 
 RUN mkdir -p /opt/app/pip_cache/.pip_cache \
     && pip install -r /opt/app/dependancies.txt --cache-dir /opt/app/pip_cache \
