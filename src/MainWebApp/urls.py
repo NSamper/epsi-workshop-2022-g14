@@ -19,5 +19,6 @@ from django.urls import path, include
 from MainWebApp import views
 
 urlpatterns = [
-    path('', views.index, name="index")
+    path('', views.index, name="index"),
+    path('/mySpace/', views.mySpace, name='mySpace')
 ]
