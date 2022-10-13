@@ -25,6 +25,7 @@ WORKDIR /opt/app/DjangoProject
 
 RUN python3 manage.py makemigrations \
     && python3 manage.py migrate \
+    && python3 manage.pu collectstatic --noinput \
     && python3 manage.py test > test-results.txt
 
 RUN chmod -R a+rwx /opt/app/
