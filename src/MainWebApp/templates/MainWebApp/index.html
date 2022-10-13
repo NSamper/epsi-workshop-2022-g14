@@ -1,11 +1,182 @@
-{% extends "MainWebApp/base.html" %}
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="fr">
+	<head>
+		<title>Sariel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        {% load static %}
+		<link rel="stylesheet" href=" {% static 'css/main.css' %}"/>
 
-{% block content %}
-    <main class="container align-content-center">
-    {% if feedback %}
-        message : {{ feedback.message }}
-    {% else %}
-        No recommandations found
-    {% endif %}
-    </main>
-{% endblock %}
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Bienvenue</a></li>
+							<li><a href="#one">Qui sommes nous ?</a></li>
+							<li><a href="#two">Sariel</a></li>
+							<li><a href="#three">Contactez-nous</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Sariel</h1>
+							<p>Reprendre le rythme avec Sariel.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">En savoir plus</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic01.jpg' %}" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Notre équipe</h2>
+									<p>Composé d'ingénieurs en développement ainsi que d'ingénieurs réseau et systèmes, nous nous sommes intéréssés au bien être des employés dans les sociétés.  </p>
+									<ul class="actions">
+										<li><a href="#one" class="button">En savoir plus</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic02.jpg' %}" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Notre vision</h2>
+									<p>Avoir de bonnes performances, de bons chiffres, c'est ce que chaque société souhaite mais à qu'elle coût ? Sariel est là pour monitorer les choses qui ne se remarquent pas.</p>
+									<ul class="actions">
+										<li><a href="#one" class="button">En savoir plus</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="{% static 'images/pic03.jpg' %}" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Notre objectif</h2>
+									<p>Sariel a été développé pour chaque employé de l'entreprise afin de rester alerte sur les différents environnements de travails mais va également surveiller l'état pshychique de l'employer.</p>
+									<ul class="actions">
+										<li><a href="#one" class="button">En savoir plus</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Mon espace Sariel</h2>
+							<p>Découvrez ici votre recommandation Sariel.</p>
+
+
+							<a href="generic.html" type="button" >Votre espace Sariel</a>
+
+
+
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Contactez-nous.</h2>
+							<p>Vous êtes intéréssés par le bien être de vos salariés ? Alors n'hésitez pas à remplir le formulaire présent dessous afin de prendre contact avec nos conseillers.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Nom</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Envoyez votre message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Adresse</h3>
+											<span>437 Av. des Apothicaires<br />
+											34090 Montpellier<br />
+											France</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="#">contact@sariel.com</a>
+										</li>
+										<li>
+											<h3>Numéro de téléphone</h3>
+											<span>+33 4 5478 4523</span>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Sariel. All rights reserved.</li> <li></li>
+					</ul>
+				</div>
+			</footer>
+
+
+		<!-- Scripts -->
+		<!-- JavaScript Bundle with Popper -->
+			<script src="{% static 'js/jquery.min.js'%}'"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js'%}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js'%}"></script>
+			<script src="{% static 'js/browser.min.js'%}"></script>
+			<script src="{% static 'js/breakpoints.min.js'%}"></script>
+			<script src="{% static 'js/util.js'%}"></script>
+			<script src="{% static 'js/main.js'%}"></script>
+
+	</body>
+</html>
